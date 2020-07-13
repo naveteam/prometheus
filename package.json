@@ -1,8 +1,8 @@
 {
-  "name": "@naveteam/prometeu",
+  "name": "@naveteam/prometheus",
   "version": "0.1.1",
   "author": "Eduardo Bittencourt <eduardo.bittencourt@nave.rs>",
-  "repository": "naveteam/prometeu",
+  "repository": "naveteam/prometheus",
   "description": "",
   "private": false,
   "scripts": {
