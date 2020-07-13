@@ -28,3 +28,17 @@ jobs:
           npm publish --access public
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  pages:
+    name: Publish Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Package dependencies
+        run: yarn install
+      - name: Build and Deploy
+        run: yarn deploy
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GH_TOKEN }}
