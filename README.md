@@ -1,4 +1,7 @@
 ![Prometheus](https://github.com/naveteam/prometheus/blob/assets/header.png?raw=true)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">Repositório de hooks da Nave.rs</p>
 
@@ -68,6 +71,11 @@ Obrigado a essas maravilhosas pessoas que contribuíram de alguma maneira para o
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://bittencourt.dev"><img src="https://avatars1.githubusercontent.com/u/25224459?v=4" width="100px;" alt=""/><br /><sub><b>Eduardo Bittencourt</b></sub></a><br /><a href="https://github.com/naveteam/prometheus/commits?author=eduardobittencourt" title="Code">💻</a> <a href="#ideas-eduardobittencourt" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-eduardobittencourt" title="Maintenance">🚧</a> <a href="https://github.com/naveteam/prometheus/pulls?q=is%3Apr+reviewed-by%3Aeduardobittencourt" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/naveteam/prometheus/issues?q=author%3Aeduardobittencourt" title="Bug reports">🐛</a> <a href="https://github.com/naveteam/prometheus/commits?author=eduardobittencourt" title="Documentation">📖</a> <a href="#example-eduardobittencourt" title="Examples">💡</a></td>
+  </tr>
+</table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
@@ -78,3 +86,16 @@ Esse projeto segue a especificação de [all-contributors](https://github.com/al
 ## Licença
 
 MIT © [Nave Team](https://github.com/naveteam)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
