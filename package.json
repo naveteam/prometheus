@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "author": "Eduardo Bittencourt <eduardo.bittencourt@nave.rs>",
   "repository": "naveteam/prometheus",
-  "description": "",
+  "description": "Repositório de hooks da Nave.rs",
   "private": false,
   "scripts": {
     "start": "start-storybook -p 3000 -s public",
@@ -24,6 +24,8 @@
     "@babel/plugin-proposal-optional-chaining": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@rollup/plugin-babel": "^5.0.4",
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-image": "^2.0.5",
@@ -42,6 +44,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -53,5 +56,10 @@
   "peerDependencies": {
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
