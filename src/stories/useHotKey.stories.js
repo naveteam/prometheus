@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { useHotKey } from '../'
 
 export default {
-  title: 'useHotKey'
+  title: 'Actions|useHotKey'
 }
 
 export const Demo = () => {

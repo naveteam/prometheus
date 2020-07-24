@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { useClickOutside } from '../'
 
 export default {
-  title: 'useClickOutside'
+  title: 'Actions|useClickOutside'
 }
 
 export const Demo = () => {

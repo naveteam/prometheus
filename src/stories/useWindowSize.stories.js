@@ -2,7 +2,7 @@ import React from 'react'
 import { useWindowSize } from '../'
 
 export default {
-  title: 'useWindowSize'
+  title: 'Sensors|useWindowSize'
 }
 
 export const Demo = () => {

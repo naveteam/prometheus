@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDebounce } from '../'
 
 export default {
-  title: 'useDebounce'
+  title: 'Actions|useDebounce'
 }
 
 export const Demo = () => {
