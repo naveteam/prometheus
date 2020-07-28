@@ -1,23 +1,30 @@
 import { useEffect } from 'react'
 
-const useClickOutside = (handler, ref) => {
+const MOUSEDOWN = 'mousedown'
+const TOUCHSTART = 'touchstart'
+
+const useClickOutside = (handler, ...refs) => {
   useEffect(() => {
     const handleClick = event => {
-      if (!ref.current || ref.current.contains(event.target)) {
-        return
+      if (refs.length > 0) {
+        const needToHandle = refs.filter(ref => !ref.current || ref.current.contains(event.target))
+        if (needToHandle.length !== 0) {
+          return
+        }
+        return handler(event)
       }
 
-      handler()
+      throw new Error('É necessário ao menos uma ref.')
     }
 
-    document.addEventListener('mousedown', handleClick)
-    document.addEventListener('touchstart', handleClick)
+    document.addEventListener(MOUSEDOWN, handleClick)
+    document.addEventListener(TOUCHSTART, handleClick)
 
     return () => {
-      document.removeEventListener('mousedown', handleClick)
-      document.removeEventListener('touchstart', handleClick)
+      document.removeEventListener(MOUSEDOWN, handleClick)
+      document.removeEventListener(TOUCHSTART, handleClick)
     }
-  }, [handler, ref])
+  }, [handler, refs])
 }
 
 export default useClickOutside
