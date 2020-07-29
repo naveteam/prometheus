@@ -7,8 +7,8 @@ const useClickOutside = (handler, ...refs) => {
   useEffect(() => {
     const handleClick = event => {
       if (refs.length > 0) {
-        const needToHandle = refs.filter(ref => !ref.current || ref.current.contains(event.target))
-        if (needToHandle.length !== 0) {
+        const needToHandle = refs.some(ref => !ref.current || ref.current.contains(event.target))
+        if (needToHandle) {
           return
         }
         return handler(event)
